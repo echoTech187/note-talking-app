@@ -17,14 +17,21 @@
 ## 📍 1. Overview
 
 Aplikasi Note Taking adalah perangkat lunak yang dirancang untuk membantu pengguna mencatat, mengatur, dan menyimpan informasi dalam bentuk digital dengan fungsi utamanya adalah sebagai pengganti buku catatan fisik, memo, atau alat tulis tradisional.
-<img src="./public/screenshoots/images-1.png" width="50%"/>
-<img src="./public/screenshoots/images-2.png" width="50%"/>
-<img src="./public/screenshoots/images-3.png" width="50%"/>
-<img src="./public/screenshoots/images-4.png" width="50%"/>
-<img src="./public/screenshoots/images-5.png" width="50%"/>
-<img src="./public/screenshoots/images-6.png" width="50%"/>
-<img src="./public/screenshoots/images-7.png" width="50%"/>
+<div style="display:flex">
+<img src="./public/screenshots/images-1.png" width="50%"/>
 
+<img src="./public/screenshots/images-2.png" width="50%"/>
+ 
+<img src="./public/screenshots/images-3.png" width="50%"/>
+
+<img src="./public/screenshots/images-4.png" width="50%"/>
+
+<img src="./public/screenshots/images-5.png" width="50%"/>
+
+<img src="./public/screenshots/images-6.png" width="50%"/>
+
+<img src="./public/screenshots/images-7.png" width="50%"/>
+</div>
 ---
 
 ## 📁 2. Rancangan Struktur Database
