@@ -78,14 +78,11 @@ Berikut adalah skema rancangan database:
 <br/>Alur ini adalah gerbang utama bagi pengguna untuk masuk ke dalam aplikasi.
 
 - Pengguna (Baru):
-<br/>
 <br/>- Membuka aplikasi dan memilih opsi "Daftar".
 <br/>- Mengisi formulir dengan nama, email, dan password.
 <br/>- Menekan tombol "Daftar & Masuk".
-<br/>
 
 - Pengguna (Terdaftar):
-<br/>
 <br/>- Membuka aplikasi dan memilih opsi "Login".
 <br/>- Memasukkan email dan password.
 <br/>- Menekan tombol "Masuk".
@@ -93,7 +90,6 @@ Berikut adalah skema rancangan database:
 
 2. Membuat & Mengelola Catatan 📝
 <br/>Ini adalah fungsi inti dimana pengguna membuat konten pribadinya.
-<br/>
 <br/>- Pada halaman dashboard, tekan tombol <b>"Buat Catatan Baru"</b>.
 <br/>- <b>Isi konten catatan</b>.
 <br/>- Pilih <b>Visibility Public, Private</b>  atau <b>Bagikan ke</b>.
@@ -102,25 +98,25 @@ Berikut adalah skema rancangan database:
 
 3. Membagikan Catatan 🤝
 <br>Alur ini menjelaskan bagaimana sebuah catatan pribadi bisa diakses oleh orang lain.
-<br>
 <br>a. Berbagi ke Pengguna Tertentu (Pemilik Catatan) :
 <br>- Membuka salah satu catatan pribadinya.
 <br>- Mencari dan menekan tombol "Bagikan" atau "Share".
 <br>- Pilih pengguna yang dituju.
 <br>- Menekan tombol "Undang".
-<br>
 <br>b. Berbagi ke Publik (Pemilik Catatan) :
 <br>- Membuka catatan pribadinya.
 <br>- Menemukan opsi seperti "Jadikan Publik".
 <br>- Mengaktifkan opsi tersebut.
 
-4. Berkomentar 💬
+5. Berkomentar 💬
 <br>Alur ini menjelaskan bagaimana seorang pengguna melihat catatan dan berinteraksi.
 <br>- Buka catatan yang ingin dikomentari .
 <br>- Mengetik komentar di kolom yang tersedia.
 <br>- Kirim komentar
 <br>
+
 ---
+
 ## 📌 Library / Plugin
 
 - <b>@iconify/tailwind4</b>
