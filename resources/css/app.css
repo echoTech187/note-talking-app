@@ -1,0 +1,326 @@
+@import 'tailwindcss';
+@plugin "@iconify/tailwind4";
+@tailwind utilities;
+
+@source '../views/**/*.blade.php';
+@source '../views/**/*.js';
+@source '../views/components/**/*.blade.php';
+@source '../../vendor/laravel/framework/src/Illuminate/View/resources/views/*.blade.php';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.post * {
+    all: revert !important;
+
+    font-size: revert !important;
+    line-height: revert !important;
+    font-weight: revert !important;
+    margin: revert !important;
+    padding: revert !important;
+    list-style: revert !important;
+    text-align: revert !important;
+    color: revert !important;
+    text-transform: revert !important;
+    text-decoration: revert !important;
+    white-space: revert !important;
+    word-break: revert !important;
+    word-wrap: revert !important;
+    direction: revert !important;
+    unicode-bidi: revert !important;
+    border: revert !important;
+    border-collapse: revert !important;
+    border-spacing: revert !important;
+    background: revert !important;
+    background-color: revert !important;
+    background-image: revert !important;
+    background-position: revert !important;
+    background-repeat: revert !important;
+    background-size: revert !important;
+    background-attachment: revert !important;
+    box-shadow: revert !important;
+    box-decoration-break: revert !important;
+    clip: revert !important;
+    clip-path: revert !important;
+    clip-rule: revert !important;
+    mix-blend-mode: revert !important;
+    opacity: revert !important;
+    color-interpolation: revert !important;
+    color-interpolation-filters: revert !important;
+    color-rendering: revert !important;
+    fill: revert !important;
+    fill-rule: revert !important;
+    image-rendering: revert !important;
+    marker: revert !important;
+    mask: revert !important;
+    mask-type: revert !important;
+    mix-blend-mode: revert !important;
+    object-fit: revert !important;
+    object-position: revert !important;
+    shape-rendering: revert !important;
+    stop-color: revert !important;
+    stop-opacity: revert !important;
+    text-align: revert !important;
+    text-decoration: revert !important;
+    text-overflow: revert !important;
+    text-transform: revert !important;
+    vector-effect: revert !important;
+    vertical-align: revert !important;
+    visibility: revert !important;
+    white-space: revert !important;
+    word-break: revert !important;
+    word-spacing: revert !important;
+    word-wrap: revert !important;
+    writing-mode: revert !important;
+    direction: revert !important;
+    text-align-last: revert !important;
+}
+
+
+
+select:not(multiple),
+::picker(select) {
+    appearance: base-select;
+}
+
+::picker(select) {
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333;
+}
+
+select::picker-icon {
+    color: #ccc;
+    transition: 0.4s rotate;
+}
+
+option .icon {
+    font-size: 1.6rem;
+    text-box: trim-both cap alphabetic;
+}
+
+option {
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+option:checked {
+    font-weight: bold;
+}
+
+option::checkmark {
+    order: 1;
+    margin-left: auto;
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    color: green;
+    font-weight: bold;
+    transition: 0.4s color;
+}
+
+.masonry-container {
+    column-gap: 20px;
+}
+
+.note-card {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/* CSS */
+.button-red-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-red-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-red-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to left,
+            hsl(340deg 100% 16%) 0%,
+            hsl(340deg 100% 32%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340deg 100% 16%) 100%);
+}
+
+.button-red-front {
+    display: flex;
+    position: relative;
+    padding: 6px 12px;
+    border-radius: 12px;
+    /* font-size: 1.1rem; */
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+    .button-red-front {
+        /* font-size: 1.25rem; */
+        padding: 6px 12px;
+    }
+}
+
+.button-red-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+
+.button-red-pushable:hover .button-red-front {
+    transform: translateY(-6px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-red-pushable:active .button-red-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.button-red-pushable:hover .button-red-shadow {
+    transform: translateY(4px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-red-pushable:active .button-red-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+.button-red-pushable:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.button-secondary-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-secondary-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-secondary-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to left,
+            hsl(340deg 0% 16%) 0%,
+            hsl(340deg 0% 32%) 8%,
+            hsl(340deg 0% 32%) 92%,
+            hsl(340deg 0% 16%) 100%);
+}
+
+.button-secondary-front {
+    display: flex;
+    position: relative;
+    padding: 6px 12px;
+    border-radius: 12px;
+    /* font-size: 1.1rem; */
+    color: white;
+    background: hsl(0, 0%, 5%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+    .button-secondary-front {
+        /* font-size: 1.25rem; */
+        padding: 6px 12px;
+    }
+}
+
+.button-secondary-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+
+.button-secondary-pushable:hover .button-secondary-front {
+    transform: translateY(-6px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-secondary-pushable:active .button-secondary-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.button-secondary-pushable:hover .button-secondary-shadow {
+    transform: translateY(4px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-secondary-pushable:active .button-secondary-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+.button-secondary-pushable:focus:not(:focus-visible) {
+    outline: none;
+}
